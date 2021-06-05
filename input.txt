@@ -1,0 +1,96 @@
+{ Sample program
+  in TINY language
+  compute absolute difference
+}
+{
+test case #1
+abs:=5&3;
+
+test case #2
+abs:=3&5;
+
+test case #3
+abs:=10&6*3;
+
+test case #4
+abs:=22&44/11;
+
+test case #5
+abs:=3*4&6;
+
+test case #6
+abs:=8/8&8;
+
+test case #7
+abs:=9*10&75+15;
+
+test case #8
+abs:=9&8&11;
+
+test case #9
+abs:=30-17&80;
+
+test case #10
+abs:=7+5&13*2^3;
+
+test case #11
+abs:=(7&19)/3;
+
+test case #12
+abs:=(5-2)&6*10-1;
+
+test case #13
+read x;
+read y;
+if y<x then
+   repeat
+      x:=x&1
+   until x=y;
+   abs:=x&y;
+   write abs
+else
+   abs:=x&y;
+   write abs
+
+test case #14
+abs:=7*4&5-2&102;
+
+test case #15
+abs:=81/9+67&13&6;
+
+test case #16
+abs:=25&50-4^2;
+
+test case #17
+read x;
+read y;
+read z;
+if y&z=5 then
+   abs:=x+y&z;
+   write abs
+else
+   abs:=x&y+z;
+   write abs
+
+test case #18
+abs:=5&50*10&250+6-10&7^5;
+
+test case #19
+abs:=(10&4*4)+(10&4/2+5);
+
+test case #20
+abs:=9&9*2/10;
+
+}
+read x;
+read y;
+if y<x then
+   repeat
+      x:=x&1
+   until x=y;
+   abs:=x&y;
+   write abs
+else
+   abs:=x&y;
+   write abs
+end
